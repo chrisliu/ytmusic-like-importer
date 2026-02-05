@@ -5,7 +5,14 @@ Import songs from a YouTube Music playlist into your liked songs.
 ## Installation
 
 ```bash
+python3 -m venv .venv
+```
+
+```bash
 source .venv/bin/activate
+```
+
+```bash
 pip install -r requirements.txt
 ```
 
