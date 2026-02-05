@@ -11,11 +11,17 @@ pip install -r requirements.txt
 
 ## Authentication
 
-Follow the [ytmusicapi browser setup guide](https://ytmusicapi.readthedocs.io/en/stable/setup/browser.html):
+```bash
+python setup_browser.py
+```
 
-1. Run: `ytmusicapi browser`
-2. Open YouTube Music in your browser and copy the request headers when prompted
-3. This creates a `browser.json` file with your credentials
+1. Open https://music.youtube.com in your browser and log in
+2. Open DevTools (F12) > Network tab
+3. Click "Home" or "Explore" in the left sidebar to trigger a `/browse` POST request
+4. Click the `/browse` request and copy the `Authorization` and `Cookie` headers
+5. Paste them into the script prompts
+
+Credentials are valid for ~2 years unless you log out.
 
 ## Scripts
 
